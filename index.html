@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Old Stairwell 
+Description: A two-column, fixed-width design with dark color scheme.
+Version    : 1.0
+Released   : 20130313
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="google-site-verification" content="TKhkDFKyhvcrubOqVQVf7xQG4bUSzAuJlXiN4_Ts7yQ" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karlsruhe Longest Paths</title>
+<meta name="keywords" content="longest Paths, dynamic programming, graph partitioning" />
+<meta name="description" content="The main project page of to open source framework KaLP -- Karlsruhe Longest Paths" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700" rel="stylesheet" type="text/css">
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+</head>
+<body>
+<div id="wrapper">
+	<div id="header">
+		<div id="logo">
+			<h1><a href="#">KaLP - </a><a href="#" style="color:red">Ka</a><a href="#">rlsruhe </a> <a href="#" style="color:red">L</a><a href="#">ongest <a href="#" style="color:red">P</a><a href="#">aths</a></h1>
+                        <br>
+Tomas Balyo, Kai Fieger, Christian Schulz
+		</div>
+	</div>
+	<div id="page">
+		<div id="content">
+                
+			<h2>Overview</h2>
+The longest path problem (LP) is to find a simple path 
+of maximum length between two given vertices of a graph 
+where length is defined as the number of edges or the total weight of the edges in the path.
+The problem is known to be NP-complete and has several applications such as designing circuit boards, project planning, information retrieval or patrolling algorithms for multiple robots in graphs. 
+<br>
+We proposed an optimal algorithm for solving the longest path problem in undirected graphs. By using graph partitioning and dynamic programming, we designed an algorithm which 
+is significantly faster than other state-of-the-art methods and can solve more instances. Here we provide the implementation of the algorithm as easy to use open source software. 
+<p><img alt="A maze with a longest path." src="images/lpath.png" width=100 alt="A maze with a longest path."></p>
+ <br>
+<br>
+<b style="color:red">News:</b>       <br>
+<b>1st Mai 2019:</b> The paper that explains our (parallel) algorithms has been accepted at the 12th Symposium on Combinatorial Search. <br> 
+<b>18th January 2019:</b> Updated the release, which now contains shared-memory parallel algorithms.<br> 
+<b>8th March 2017:</b> Provided benchmark problems.<br> 
+<b>16th February 2017:</b> Initial release.<br> 
+<b>14th February 2017:</b> Published arXiv report. Link to <a href="https://arxiv.org/pdf/1702.04170.pdf">PDF</a>.<br> 
+
+
+
+                        <br>
+
+			<h2>Licence</h2>
+                        The program is licenced under GPL 3.0. Please let us know if you need a commercial licence. (We also give away MIT licence on request).<br>
+                        If you publish results using our algorithms, <b>please acknowledge</b> our work by quoting the following paper (<a href="https://arxiv.org/pdf/1702.04170.pdf">PDF</a>):<br><br>
+                        <b>@article{balyo2017, <br>
+ &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp AUTHOR = {Balyo, Tomas and Fieger, Kai and Schreiber, Dominik and Schulz, Christian},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       TITLE = {{Finding Optimal Longest Paths by Dynamic Programming in Parallel}},<br>
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       BOOKTITLE = {Proceedings of the 12th Symposium on Combinatorial Search (SoCS'19)},<br>
+  <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       SERIES    = {LNCS},<br>-->
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PUBLISHER = {{AAAI} Press},<br>
+  <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       JOURNAL = {Technical Report. arXiv:1702.04170},<br>-->
+  &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       YEAR    = {2019}<br>
+<!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       VOLUME = {xxx},<br>-->
+  <!--&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp                       PAGES = {xxx}<br>-->
+                        }</b>
+</ul>
+                        <p></p>
+			<h2>Download</h2> 
+                        <ul>
+                                <li> <a href="http://algo2.iti.kit.edu/schulz/software_releases/KaLPv2.0.tar.gz">KaLPv2.0.tar.gz</a>  
+                                <li> <a href="http://algo2.iti.kit.edu/schulz/software_releases/kalp1.0.pdf">User Guide to KaLP v1.00</a>
+                        </ul>
+
+			<h2>Benchmark Graphs</h2>
+
+We provide a benchmark with various instances for the longest path problem. The benchmark consists of two main categories ``mazes'' and ``others''. The instances we provide here are either in DIMACS format (mazes) or in the METIS format (others). Mazes have been generated using the maze generator provided in the KaLP framework using a different random seeds, side lengths of the mazes and amounts of blocked cells. The category ``others'' contains subgraphs of other publicly available graphs. <br> <br>
+                <ul><li>Download the benchmark here: <a href="https://algo2.iti.kit.edu/schulz/lp_benchmark.tar.gz">lp_benchmark.tar.gz</a></li></ul>  
+
+			<h2>Support</h2>
+                        <ul>
+                                <li> Write us an <a href="mailto:christian.schulz@univie.ac.at,balyo@ira.uka.de?subject=SupportRequestLongestPaths">email</a> if you need support!  
+                                <li>We are glad for any comments and error reports (or even bug fixes or feature requests) that you send us. 
+                                <li>Graphs used in our papers will be provided to you on request!
+                                </ul>
+                                
+
+			<h2>Other Open Source Frameworks</h2>
+                        <ul>
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">KaHIP</a> -- Karlsruhe High Quality Partitioning 
+                                <li> <a href="http://algo2.iti.kit.edu/kahip">ParHIP</a> -- Parallel High Quality Partitioning 
+                                <li> <a href="http://algo2.iti.kit.edu/kadraw">KaDraw</a> -- Karlsruhe Graph Drawing 
+                                <li> <a href="http://algo2.iti.kit.edu/kamis">KaMIS</a> -- Karlsruhe Maximum Independent Sets
+                                <li> <a href="http://viem.taa.univie.ac.at">VieM</a> -- Vienna Mapping and Sparse Quadratic Assignment 
+
+                                <li> <a href="http://vieclus.taa.univie.ac.at">VieClus</a> -- Vienna Graph Clustering
+
+
+
+	        </div>
+
+        </div>
+	<div id="footer">
+		<p>Copyright (c) 2017. Site maintained by Tomas Balyo, Kai Fieger, Christian Schulz. All rights reserved. Initial release of KaLP: March 2017. See main site for impressum. Design by <a href="http://www.freecsstemplates.org">FCT</a>.</p>
+	</div>
+</div>
+</body>
+</html>
